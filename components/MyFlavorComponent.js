@@ -27,12 +27,14 @@ class MyFlavorComponent extends React.Component{
     }
 
     imageComponent = () => {
-        if (this.state.pcg === "com.product_flavors.original"){
+        if (this.state.pcg === "com.product_flavors"){
             return (<Image 
+                style={styles.image}
                 source = {require('../assets/sponge.png')} 
             />)
         }else{
             return (<Image 
+                style={styles.image}
                 source = {require('../assets/mario.png')} 
             />)
         }
@@ -41,10 +43,10 @@ class MyFlavorComponent extends React.Component{
     render(){
         const img = this.state.image;
         return(
-            <View>
+            <View style={styles.wrap}>
                 <Text style={styles.innerText}>Package name here: {this.state.pcg}</Text>
-                <View style={{justifyContent: "center", alignItems: "center"}}>
-                    <Text>Picture Placeholder for now</Text>
+                <View style={styles.imageWrap}>
+                    {this.imageComponent()}
                 </View>
             </View>
         )
@@ -54,9 +56,24 @@ class MyFlavorComponent extends React.Component{
 export default MyFlavorComponent;
 
 const styles = StyleSheet.create({
+    wrap: {
+        flex: 1,
+        justifyContent: "center", 
+        alignItems: "center",
+    },
     innerText: {
         fontSize: 20,
         fontWeight: "bold",
         textAlign: "center"
+    },
+    imageWrap: {
+        justifyContent: "center", 
+        alignItems: "center",
+        width: 300,
+        height: 400
+    },
+    image:{
+        flex: 1,
+        resizeMode: "contain"
     }
 })
