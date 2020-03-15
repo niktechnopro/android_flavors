@@ -12,18 +12,7 @@ class MyFlavorComponent extends React.Component{
 
     componentDidMount = () => {
         console.log("component did mount");
-        // let image;
-        // AppDetails.appVersion(pcg => {
-        //     if (pcg === "com.product_flavors.original"){
-        //         image = "../assets/sponge.png"
-        //     }else{
-        //         image = "../assets/mario.png"
-        //     }
-        //     console.log("stuff: ", pcg);
-        //     this.setState({
-        //         pcg,
-        //     })
-        // });
+        
     }
 
     imageComponent = () => {
