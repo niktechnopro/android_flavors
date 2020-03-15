@@ -1,6 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet, NativeModules, Image } from "react-native";
-const { AppDetails } = NativeModules;
+import { View, Text, StyleSheet, Image } from "react-native";
 
 class MyFlavorComponent extends React.Component{
     constructor(){
