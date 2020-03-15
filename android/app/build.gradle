@@ -162,6 +162,21 @@ android {
             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
         }
     }
+    flavorDimensions "version"
+    productFlavors {
+        spongebob {
+            dimension "version"
+            applicationIdSuffix ".spongebob"
+            versionNameSuffix "-spongebob"
+            resValue "string", "build_config_package", "com.android_flavors"
+        }
+        mario {
+            dimension "version"
+            applicationIdSuffix ".mario"
+            versionNameSuffix "-mario"
+            resValue "string", "build_config_package", "com.android_flavors"
+        }
+    }
     // applicationVariants are e.g. debug, release
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
