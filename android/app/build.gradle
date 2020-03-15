@@ -168,13 +168,11 @@ android {
             dimension "version"
             applicationIdSuffix ".spongebob"
             versionNameSuffix "-spongebob"
-            resValue "string", "build_config_package", "com.android_flavors"
         }
         mario {
             dimension "version"
             applicationIdSuffix ".mario"
             versionNameSuffix "-mario"
-            resValue "string", "build_config_package", "com.android_flavors"
         }
     }
     // applicationVariants are e.g. debug, release
