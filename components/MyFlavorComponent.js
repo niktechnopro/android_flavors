@@ -1,10 +1,24 @@
-import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import React, { Component } from "react";
+import { View, Text, StyleSheet, Image, NativeModules } from "react-native";
+const { PackageReader } = NativeModules;
 
-const MyFlavorComponent = (props) => {
 
-    const imageComponent = () => {
-        if (props.pcg === "com.product_flavors.spongebob"){
+class MyFlavorComponent extends Component{
+    constructor(){
+        super()
+        this.state = {
+            pcg: ""
+        }
+    }
+
+    componentDidMount = () => {
+        PackageReader.packageReader(pcg => {
+            this.setState({ pcg });
+        })
+    }
+
+    imageComponent = () => {
+        if (this.state.pcg === "com.android_flavors.spongebob"){
             return (<Image 
                 style={styles.image}
                 source = {require('../assets/sponge.png')} 
@@ -16,14 +30,17 @@ const MyFlavorComponent = (props) => {
             />)
         }
     }
-    return(
-        <View style={styles.wrap}>
-            <Text style={styles.innerText}>Package name here: {props.pcg}</Text>
-            <View style={styles.imageWrap}>
-                {imageComponent()}
+    
+    render(){
+        return(
+            <View style={styles.wrap}>
+                <Text style={styles.innerText}>Package name here: {this.state.pcg}</Text>
+                <View style={styles.imageWrap}>
+                    {this.imageComponent()}
+                </View>
             </View>
-        </View>
-    )
+        )
+    }
 }
 
 export default MyFlavorComponent;
