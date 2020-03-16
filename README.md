@@ -10,5 +10,5 @@ This is a test to investigate how to make flavors on Android React Native App
 * JAVA
 
 ## Project Screenshot:
-![spongebob flavor](/screenshots/flavor-spongebob.png "project screenshot")
-![mario flavor](/screenshots/flavor-mario.png "project screenshot")
+![spongebob flavor](/screenshots/flavor-spongebob.png "spongebob flavor")
+![mario flavor](/screenshots/flavor-mario.png "mario flavor")
