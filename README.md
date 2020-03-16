@@ -10,7 +10,7 @@ This is a test to investigate how to make flavors on Android React Native App
 * JAVA
 
 ## Flavors: Sponge Bob and Mario
-** Sponge Bob flavor - npm run android-bob
-** Mario flavor - npm run android-mario
+# Sponge Bob flavor - npm run android-bob
+# Mario flavor - npm run android-mario
 ![spongebob flavor](/screenshots/flavor-spongebob.png "spongebob flavor")
 ![mario flavor](/screenshots/flavor-mario.png "mario flavor")
