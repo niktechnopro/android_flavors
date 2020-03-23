@@ -1,4 +1,4 @@
-# Exploring build flavors on Android
+# Exploring build flavors on Android, while keeping the same code base
 Experiment with flavors for Android React-Native app. Developped to test functionality.
 
 ## Overview of Project:
