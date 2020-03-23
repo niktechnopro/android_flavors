@@ -16,3 +16,4 @@ This is a test to investigate how to make varios flavors of Android React Native
 
 ![spongebob flavor](/screenshots/flavor-spongebob.png "spongebob flavor")
 ![mario flavor](/screenshots/flavor-mario.png "mario flavor")
+
