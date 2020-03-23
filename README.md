@@ -6,6 +6,7 @@ This is a test to investigate how to make flavors on Android React Native App
 
 ## Technologies, Frameworks, and Programming Languages used:
 * React-Native
+* JavaScript
 * XML
 * JAVA
 
