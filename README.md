@@ -2,7 +2,7 @@
 Experiment with flavors for Android React-Native app. Developped to test functionality.
 
 ## Overview of Project:
-This is a test to investigate how to make flavors on Android React Native App
+This is a test to investigate how to make varios flavors of Android React Native App, while keeping the same code base
 
 ## Technologies, Frameworks, and Programming Languages used:
 * React-Native
