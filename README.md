@@ -1,7 +1,7 @@
 # Exploring build flavors on Android
 Experiment with flavors for Android React-Native app. Developped to test functionality.
 
-##article on medium.com: 
+## article on medium.com: 
 https://medium.com/@niktechnopro/android-flavors-how-to-change-icons-of-your-build-and-assets-based-on-the-flavor-using-the-same-ea2c9b8a0976
 
 ## Overview of Project:
